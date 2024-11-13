@@ -41,8 +41,8 @@ main {
 }
 
 .container {
-  width: 60%; /* se for uma tela menor que 980px vai se adaptar a 70% */
-  max-width: 960px; /* quando chegar em 980px para de aumentar */
+  width: 60%;
+  max-width: 960px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 25px 50px -12px;
   background-color: #fff;
   display: flex;
@@ -123,7 +123,13 @@ main {
 }
 
 .container .profile-data .info p{
-  font-size: 15px;  
+  font-size: 16px;  
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.container .profile-data .info .data .number{
+  font-size: 14px;  
   font-weight: 400;
   line-height: 23px;
 }
@@ -131,6 +137,7 @@ main {
 /* REPOSITORIES */
 
 .container .profile-data .repositories h2{
+  font-weight: 600;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -155,8 +162,44 @@ main {
   color: #fff
 }
 
+.container .profile-data .repositories ul li .repo-icons{
+  display: flex;
+  flex-direction: row
+}
+
+.container .profile-data .repositories ul li .repo-icons span{
+  color: #ffffff;
+  background-color: #7925C6;
+  border: 1px solid #7925C6;
+  border-radius: 7px;
+  padding: 4px;
+  margin: 2px;
+}
+
 .container .profile-data.hide{
   display: none;
+}
+
+/* EVENTS */
+
+.container .profile-data .events{
+  width: 100%;
+  height: 100%;
+}
+.container .profile-data .events li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .profile-data .events h2{
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.container .profile-data .events .event-title{
+  font-weight: bold;
+  padding: 10px;
 }
 
 @media (max-width: 1280px) {
